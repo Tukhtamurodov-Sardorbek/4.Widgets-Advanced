@@ -12,33 +12,21 @@ class _Task1ResultState extends State<Task1Result> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            child: Column(
-              children: [
-                Expanded(
+          child:SizedBox(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Center(
+                child: SingleChildScrollView(
                   child: Row(
                     children: const [
+                      Expanded(child: Image(image: AssetImage('assets/images/img_5.png'))),
                       Expanded(child: Image(image: AssetImage('assets/images/img_6.png'))),
-                      Expanded(child: Image(image: AssetImage('assets/images/img_8.png')))
                     ],
-                  )
+                  ),
                 ),
-                const SizedBox(height: 5),
-                Expanded(
-                    child: Row(
-                      children: const [
-                        Expanded(child: Image(image: AssetImage('assets/images/img_7.png'))),
-                        Expanded(child: Image(image: AssetImage('assets/images/img_9.png')))
-                      ],
-                    )
-                ),
-              ]
+              )
             ),
-          ),
-        )
-      ),
+          )
     );
   }
 }

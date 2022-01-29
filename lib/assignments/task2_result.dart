@@ -11,22 +11,22 @@ class _Task2ResultState extends State<Task2Result> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: SingleChildScrollView(
-            child: Container(
+        body: SafeArea(
+          child:SizedBox(
               height: MediaQuery.of(context).size.height,
-              child: Column(
-                  children: const [
-                    Image(image: AssetImage('assets/images/img_10.png')),
-                    SizedBox(height: 5),
-                    Expanded(
-                        child: Image(image: AssetImage('assets/images/img_11.png'))
-                    ),
-                  ]
-              ),
-            ),
-          )
-      ),
+              width: MediaQuery.of(context).size.width,
+              child: Center(
+                child: SingleChildScrollView(
+                  child: Row(
+                    children: const [
+                      Expanded(child: Image(image: AssetImage('assets/images/img_7.png'))),
+                      Expanded(child: Image(image: AssetImage('assets/images/img_8.png')))
+                    ],
+                  ),
+                ),
+              )
+          ),
+        )
     );
   }
 }

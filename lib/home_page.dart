@@ -3,20 +3,26 @@ import 'package:widgets_intermediate/assignments/task1.dart';
 import 'package:widgets_intermediate/assignments/task1_result.dart';
 import 'package:widgets_intermediate/assignments/task2.dart';
 import 'package:widgets_intermediate/assignments/task2_result.dart';
-import 'package:widgets_intermediate/concepts/1.Alert_Dialogue.dart';
-import 'package:widgets_intermediate/concepts/2.Drawer.dart';
-import 'package:widgets_intermediate/concepts/3.Drawer.dart';
+import 'package:widgets_intermediate/concepts/10.1.NavigationRail.dart';
+import 'package:widgets_intermediate/concepts/5.2.TextField.dart';
+import 'package:widgets_intermediate/concepts/5.TextField.dart';
+import 'package:widgets_intermediate/concepts/6.1TextFormField.dart';
+import 'package:widgets_intermediate/concepts/7.1SpeedDial.dart';
+import 'package:widgets_intermediate/concepts/9.1.SliverAppBar.dart';
 
-import 'concepts/10.PageView.dart';
-import 'concepts/11.PageView.dart';
-import 'concepts/12.BottomNavigationBar.dart';
-import 'concepts/13.TabBarView.dart';
-import 'concepts/4.SingleChildScrollView.dart';
-import 'concepts/5.ListView_Vertical.dart';
-import 'concepts/6.ListView_Horizontal.dart';
-import 'concepts/7.ListViews.dart';
-import 'concepts/8.GridView.dart';
-import 'concepts/9.GridView.dart';
+import 'assignments/task3.dart';
+import 'assignments/task3_result.dart';
+import 'concepts/1.ContainerDecoration.dart';
+import 'concepts/10.NavigationRail.dart';
+import 'concepts/2.ContainerGradient.dart';
+import 'concepts/3.CustomizedButton.dart';
+import 'concepts/4.1.GestureDetector.dart';
+import 'concepts/4.GestureDetector.dart';
+import 'concepts/5.1 TextField.dart';
+import 'concepts/6.CustomizedTextField.dart';
+import 'concepts/7.SpeedDial.dart';
+import 'concepts/8.FancyBottomNavigation.dart';
+import 'concepts/9.SliverAppBar.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
   static const String id = 'home_page';
@@ -26,25 +32,32 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Map<String,String> concepts = {AlertDialogue.id : 'ALERT DIALOG',
-    DrawerPage.id : 'DRAWER',
-    Drawer2.id : 'DRAWER',
-    SinglChildScrollViewWidget.id : 'SINGLE CHILD SCROLL VIEW',
-    ListViewVertical.id : 'VERTICAL LIST VIEW',
-    ListViewHorizontal.id : 'HORIZONTAL LIST VIEW',
-    ListViews.id : 'HORIZONTAL + VERTICAL LIST VIEW',
-    GridViews.id : 'GRID VIEW',
-    GridViews2.id : 'GRID VIEW',
-    PageViews.id : 'PAGE VIEW',
-    PageViews2.id : 'PAGE VIEW',
-    BottomNavigationBars.id : 'BOTTOM NAVIGATION BAR',
-    TabBars.id : 'TAB BAR',
+  Map<String,String> concepts = {
+    ContainerDecoration.id : 'CONTAINER DECORATION',
+    ContainerGradient.id : 'CONTAINER GRADIENT',
+    CustomizedButton.id : 'CUSTOMIZED BUTTON',
+    GestureDetectorWidget.id : 'GESTURE DETECTOR',
+    Gesture.id : 'GESTURE DETECTOR',
+    TextFieldWidget.id : 'TEXT FIELD',
+    TextField2.id : 'TEXT FIELD',
+    TextField3.id : 'TEXT FIELD',
+    CustomizedTextField.id : 'TEXT FORM',
+    FormField2.id : 'TEXT FORM',
+    SpeedDialWidget.id : 'SPEED DIAL',
+    SpeedDialWidget1.id : 'SPEED DIAL',
+    FancyBottom.id : 'FANCY BOTTOM',
+    SliverAppBarWidget.id : 'SLIVER APP BAR',
+    SliverAppBarWidget2.id : 'SLIVER APP BAR',
+    NavigationRailWidget.id : 'NAVIGATION RAIL',
+    NavigationRailWidget2.id : 'NAVIGATION RAIL',
   };
   Map<String,String> tasks = {
-    TelegramLikeUI.id : 'MESSENGER',
-    Task1Result.id : 'RESULT',
-    Task2.id : 'BOTTOM NAVIGATION BAR',
-    Task2Result.id : 'RESULT',
+    Task1.id : 'First Task',
+    Task1Result.id : 'First Task Result',
+    Task2.id : 'Second Task',
+    Task2Result.id : 'Second Task Result',
+    Task3.id : 'Third Task',
+    Task3Result.id : 'Third Task Result'
   };
 
   @override
@@ -55,7 +68,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
-          title: const Text('Widgets Intermediate'),
+          title: const Text('Widgets Advanced'),
           centerTitle: true,
           bottom: const TabBar(
               indicatorColor: Colors.cyan,

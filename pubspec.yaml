@@ -21,6 +21,8 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   url_launcher: ^6.0.17
   photo_view: ^0.13.0
+  flutter_speed_dial: ^5.0.0+1
+  fancy_bottom_navigation: ^0.3.3
 
 flutter:
 
@@ -29,8 +31,6 @@ flutter:
   assets:
     - assets/carbon/
     - assets/images/
-    - assets/profile_pictures/boys/
-    - assets/profile_pictures/girls/
     - assets/readme/
 
   # An image asset can refer to one or more resolution-specific "variants", see
