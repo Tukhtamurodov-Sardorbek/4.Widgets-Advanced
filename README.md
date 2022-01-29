@@ -1,6 +1,6 @@
-# Intermediate Widgets
+# Advanced Widgets
 
-## 4-MODUL 5-LESSON
+## 4-MODUL 6-LESSON
 
 ![This is an image](assets/readme/img.png)
 ![This is an image](assets/readme/img_1.png)
